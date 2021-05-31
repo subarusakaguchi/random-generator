@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gerador de números</title>
+</head>
+<body>
+    <header>
+        <h1>Gerador de Números Aleatórios</h1>
+    </header>
+
+    <main>
+        <section>
+            <div id="dados">
+                <p>Número mínimo:</p> <input type="number" name="min" id="min" value="1">
+                <br>
+                <p>Número máximo:</p> <input type="number" name="max" id="max" value="100">
+                <br>
+                <p>Quantidade de números sorteados:</p>  <input type="number" name="qt" id="qt" value="1" min="1">
+                <br>
+                <input type="button" value="Gerar" onclick="gerar()" class="btn">
+            </div>
+
+            <div id="divRes">
+                <textarea name="res" id="res" cols="30" rows="10" readonly></textarea>
+                <input type="button" value="Copiar" class="btn" onclick="copiar()">
+            </div>
+        </section>
+    </main>
+
+    <footer>Subaru Tech &copy; <a href="https://www.linkedin.com/in/subarusakaguchi/" target="_blank">Subaru Sakaguchi</a></footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
